@@ -1,6 +1,6 @@
 package Factory;
 
-public class FactoryTest {
+public class TestFactory {
     public static void main(String[] args) {
         ThingFactory thingFactory= new ThingFactory();
 
