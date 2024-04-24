@@ -1,17 +1,30 @@
 package Factory;
 
+import java.util.Scanner;
+
 public class TestFactory {
+
+
     public static void main(String[] args) {
+
+        //Se Fabrica la instancia (Animal/Humano)
+
         ThingFactory thingFactory= new ThingFactory();
+        Scanner scanner= new Scanner(System.in);
 
-        Thing animal= thingFactory.createdThing("Animal");
-        Thing human = thingFactory.createdThing("Human");
+        System.out.println("¿Qué tipo de cosa quieres crear? (Animal/Human)");
 
-        animal.jump();
-        animal.run();
+        String thingType= scanner.nextLine();
+        Thing thing= thingFactory.createdThing(thingType);
 
-        human.jump();
-        human.jump();
+
+
+
+
+        thing.jump();
+        thing.run();
+
+
 
     }
 

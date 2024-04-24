@@ -3,7 +3,7 @@ package Factory;
 import java.lang.reflect.Type;
 
 public class ThingFactory {
-
+//Metodo encargado de crear las cosas
     public Thing createdThing(String type){
 
         if (type.equalsIgnoreCase("Animal")){
