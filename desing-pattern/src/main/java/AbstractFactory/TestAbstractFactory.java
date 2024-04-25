@@ -7,7 +7,7 @@ import AbstractFactory.Factory.GuerrillaFactory;
 import AbstractFactory.Factory.SoldierFactory;
 import AbstractFactory.Weapon.Weapon;
 
-public class TestAbstractFactroy {
+public class TestAbstractFactory {
     public static void main(String[] args0){
 
         // //Encargada de hacer el test de fabricacion del Objeto:
