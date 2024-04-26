@@ -1,6 +1,4 @@
-package Builder;
-
-import AbstractFactory.Enemy.Enemy;
+package CreationalDesingPatterns.Builder;
 
 public class TestBuilder {
     public static void main(String[] args){

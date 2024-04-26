@@ -1,4 +1,4 @@
-package CreationalDesingPatterns.AbstractFactory.FactoryMethod;
+package CreationalDesingPatterns.FactoryMethod;
 
 
 

@@ -1,4 +1,4 @@
-package CreationalDesingPatterns.AbstractFactory.Factory;
+package CreationalDesingPatterns.Factory;
 
 public interface Thing {
 //Metodos de la interfaz de las cosas que sirve para los objetos animal y humano.

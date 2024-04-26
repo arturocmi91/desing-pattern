@@ -1,4 +1,4 @@
-package CreationalDesingPatterns.AbstractFactory.Factory;
+package CreationalDesingPatterns.Factory;
 
 public class ThingFactory {
 //Metodo encargado de crear las cosas

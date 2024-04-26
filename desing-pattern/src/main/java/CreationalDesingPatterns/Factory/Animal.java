@@ -1,4 +1,4 @@
-package CreationalDesingPatterns.AbstractFactory.Factory;
+package CreationalDesingPatterns.Factory;
 
 public class Animal implements Thing {
     @Override
