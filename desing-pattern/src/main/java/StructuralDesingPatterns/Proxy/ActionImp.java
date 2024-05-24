@@ -51,21 +51,36 @@ public class ActionImp implements Action{
        }
 
    }
+
     private void writeObject(String name) throws IOException {
-        FileOutputStream fos= new FileOutputStream(name);
-        ObjectOutputStream oos= new ObjectOutputStream(fos);
+        // Se abre un flujo de salida de archivos para escribir en el archivo con el nombre proporcionado
+        FileOutputStream fos = new FileOutputStream(name);
+        // Se abre un flujo de objetos de salida para escribir objetos Java en el flujo de salida de archivos
+        ObjectOutputStream oos = new ObjectOutputStream(fos);
+        // Se escribe el objeto Stats en el flujo de objetos de salida
         oos.writeObject(getStats());
+        // Se asegura que todos los datos se escriban en el flujo de salida de archivos
         oos.flush();
+        // Se cierra el flujo de objetos de salida para liberar los recursos
         oos.close();
+        // Se asegura que todos los datos se escriban en el flujo de salida de archivos
         fos.flush();
+        // Se cierra el flujo de salida de archivos para liberar los recursos
         fos.close();
+
     }
     private Object readObject(String name) throws IOException, ClassNotFoundException {
-        FileInputStream fis= new FileInputStream(name);
-        ObjectInputStream ois= new ObjectInputStream(fis);
-        Object stats= ois.readObject();
+        // Se abre un flujo de entrada de archivos para leer del archivo con el nombre proporcionado
+        FileInputStream fis = new FileInputStream(name);
+        // Se abre un flujo de objetos de entrada para leer objetos Java del flujo de entrada de archivos
+        ObjectInputStream ois = new ObjectInputStream(fis);
+        // Se lee el objeto Stats del flujo de objetos de entrada
+        Object stats = ois.readObject();
+        // Se cierra el flujo de objetos de entrada para liberar los recursos
         ois.close();
+        // Se cierra el flujo de entrada de archivos para liberar los recursos
         fis.close();
+        // Se devuelve el objeto Stats leído del archivo
         return stats;
     }
 }

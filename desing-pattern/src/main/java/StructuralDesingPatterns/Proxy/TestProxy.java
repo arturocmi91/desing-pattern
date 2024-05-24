@@ -7,7 +7,7 @@ public class TestProxy {
         ProxyActionImpl proxyAction= new ProxyActionImpl(actionImp);
         proxyAction.load("Foro_1");
         System.out.println(proxyAction.getStats());
-        proxyAction.getStats().setLevel(10);
+        proxyAction.getStats().setLevel(1);
         proxyAction.getStats().setContribution(12);
         proxyAction.getStats().setDelete(3);
         proxyAction.save("Foro_1");
